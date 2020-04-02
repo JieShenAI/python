@@ -1,0 +1,8 @@
+np.arange().reshape((a,b,c)) axis :0,1,2
+
+np.loadtxt(frame 路径,dtype,delimiter ‘，’区分,skiprows  1 跳过第一行,usecols,unpack  转置)
+
+np.transpose() 转置
+np.T()  转置
+t2.swapaxes(1,0)  转置(交换轴)
+

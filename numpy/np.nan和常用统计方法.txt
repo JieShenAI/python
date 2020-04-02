@@ -1,0 +1,26 @@
+np.nan
+	缺失，或inf -inf
+inf
+	一个数除0，inf或-inf
+
+np.nan == np.nan   false
+np.nan  != np.nan    True
+
+统计不为0个数
+	np.count_nonzero(t2)
+统计nan个数：
+	只有nan != nan 为true
+	np.count_nonzero(t2 != t2)
+	
+	np.isnan(t2)
+
+求和：
+	np.sum(t2)#所有的
+	np.sum(t2,axis = 0)#统计每一列的和
+	求和的时候，含有nan，则求出的和也为nan
+
+求平均值有nan情况:
+	t.mean(axis = 0)
+	有nan的地方返回nan
+	
+

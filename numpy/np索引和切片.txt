@@ -1,0 +1,41 @@
+
+import numpy as np
+file_path = "./us.csv"
+t1 = np.loadtxt(file_path,delimiter=',',dtype="int",skiprows=0)
+#t2 = np.loadtxt(file_path,delimiter=',',dtype="int",unpack=True)
+#unpack 转置
+print(t1)
+# print(t1[1])
+#取连续的多行
+# print(t1[1:])
+#取不连续的多行
+# print(t1[[1,0]])
+
+#取列
+# print(t1[1,:])
+# print(t1[2::])
+# print(t1[[2,0],:])
+
+# a = t1[1,2]
+# print(a)
+# print(type(a))
+#取多个点(0,0) (2,1)  和平常不一样，要注意
+# a = t1[[0,2],[0,1]]
+# a = t1[[0,2],1]
+# print(a)
+
+
+
+t[t<10]
+t[t<10]=10
+#类似三目运算符
+#把t中小于10的赋值位0，大于10的赋值位10
+np.where(t<10,0,10)
+
+#clip(裁剪)
+#把t里面小于10的替换成10，把大于18的替换成18
+t.clip(10,18)
+
+赋值为np.nan(float) 其他类型要先转换为float才能赋值为np.nan
+t = t.astype(float)
+t[3,3] = np.nan
