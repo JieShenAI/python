@@ -1,0 +1,13 @@
+#真实模拟浏览器，当发送完post请求的时候，将cookie保存到代码中
+#创建一个cookiejar对象
+cj = http.cookiejar.CookieJar()
+
+#通过cookiejar创建handler
+handler = urllib.request.HTTPCookieProcessor(cj)
+
+#根据handler创建一个opener
+opener = urllib.request.build_opener(handler)
+
+#参数都用opener.open发送请求，因为这里面带着cookie过去了
+
+具体代码模板在init.py中

@@ -1,0 +1,24 @@
+1.post
+form_data = urllib.parse.urlencode(form_data).encode()#str转byte
+2.ajax
+    豆瓣电影
+
+
+分组:
+    ab{3}
+    (ab){4}视为一个整体
+    ()  子模式\组模式  \1 \2
+    <> pattern = re.compile(r'<(\w+)><(\w+)>\w+</\2></\1>')
+贪婪模式:
+    .*?  .+?
+
+    re.I  忽略大小写
+    re.M 多行匹配
+    re.S 单行匹配
+
+    re.sub(正则表达式,替换内容,字符串)
+
+
+图片下载:
+
+
