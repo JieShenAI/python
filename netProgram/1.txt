@@ -1,0 +1,6 @@
+If we didn't bind port before we send data,the os would distribute a random port for it.
+And it will live until the progress over.
+
+sender:mustn't bind port
+receiver: we can receive data only if we bind port.
+
